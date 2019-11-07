@@ -69,6 +69,7 @@ GEM
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.11.1)
+    flutie (2.2.0)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
     globalid (0.4.2)
@@ -210,6 +211,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootsnap (>= 1.4.2)
   byebug
+  flutie
   font-awesome-sass (~> 5.6.1)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
