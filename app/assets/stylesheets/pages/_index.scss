@@ -1,2 +1,7 @@
-// Import page-specific CSS files here.
-@import "home";
+// Specific CSS for your home-page
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
