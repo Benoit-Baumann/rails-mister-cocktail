@@ -7,11 +7,11 @@
     <br>
     <ul>
         <% @cocktail.doses.each do |dose| %>
-        <li><%= dose.ingredient.name %> - <%= dose.description %> | <%= link_to 'Delete dose', dose, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <li><%= dose.ingredient.name %> - <%= dose.description %>   <%= link_to '', dose, method: :delete, data: { confirm: 'Are you sure?' }, class: 'far fa-trash-alt' %></li>
         <% end %>
     </ul>
 <% else %>
-    <h3>No ingredients listed yet...</h3>
+    <h3>No ingredient listed yet...</h3>
 <% end %>
 
 <br>
