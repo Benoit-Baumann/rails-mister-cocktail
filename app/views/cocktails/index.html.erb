@@ -1,12 +1,13 @@
-<h1>List of all the cocktails</h1>
+<h1 class="main-title">Yummy cocktails</h1>
 <br>
   <div class="card-grid">
     <% @cocktails.each do |cocktail| %>
-      <div class="card-category"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      <div class="card-category"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cocktail_image_for(cocktail) %>')">
+        <h3><%= cocktail.name %></h3>
+        <%= link_to '', cocktail_path(cocktail) %>
       </div>
     <% end %>
   </div>
 <br>
 
-<%= link_to 'Add a new cocktail', new_cocktail_path, class: 'btn btn-primary'%>
+<%= link_to 'Add a new cocktail', new_cocktail_path, class: 'btn-ghost'%>

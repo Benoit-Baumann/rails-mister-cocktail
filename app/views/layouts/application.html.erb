@@ -12,11 +12,11 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <div class="container">
+  <body class="<%= body_class %>" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "cocktail_background2.jpg" %>')">
+    
+    <div class="wraper">
       <%= yield %>
     </div>
-
 
   <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>

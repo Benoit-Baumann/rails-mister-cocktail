@@ -1,16 +1,45 @@
-.card-category {
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    text-decoration: none;
-  }
-  
+.cocktails.cocktails-index {
+  .card-category {
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      position: relative;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 4px 4px 25px 20px rgb(100, 99, 99);
+        transform: scale(1.1);
+      }
+
+      &:hover h3{
+        // color: #0dc7e7c7;
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+
+      h3 { 
+        text-align: center;
+        text-decoration: none;
+        color:white;
+        margin: auto;
+        transition: 0.3s ease-in-out;
+        font-size: 1.4em;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; 
+        width: 100%; 
+      }
+    }
+}

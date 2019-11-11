@@ -11,3 +11,14 @@
 // Your CSS partials
 @import "components/*";
 @import "pages/*";
+
+
+body {
+    background-size: cover;
+
+    h1 {
+        text-align: center;
+        font-size: 6em;
+        margin-top: 20px;
+    }
+}
